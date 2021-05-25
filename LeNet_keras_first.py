@@ -19,7 +19,7 @@ tf.set_random_seed(0)
 #    from keras.backend.tensorflow_backend import set_session
 config = tf.ConfigProto(intra_op_parallelism_threads=1, inter_op_parallelism_threads=1)
 sess = tf.Session(graph=tf.get_default_graph(),config=config)
-sess = tf.Session(config=config)
+# sess = tf.Session(config=config)
 #    K.set_session(sess)
 
 
